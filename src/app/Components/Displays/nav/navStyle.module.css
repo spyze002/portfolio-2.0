@@ -1,0 +1,11 @@
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  width: auto; 
+}
+.submain{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-between;
+}
