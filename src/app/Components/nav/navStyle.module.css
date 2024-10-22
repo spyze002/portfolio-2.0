@@ -1,13 +1,19 @@
+.all{
+
+}
 .main{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   width: auto;
-  box-sizing: border-box;
-  margin-top: 2%;
 }
 .submain{
   display: flex;
   flex-direction: row;
   width: 20%;
   justify-content: space-between;
+}
+.img{
+  width: 200px;
+  height: 200px;
 }
