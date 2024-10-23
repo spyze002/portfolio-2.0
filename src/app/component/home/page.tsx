@@ -1,7 +1,9 @@
-
+import Information from "./information"
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Information />
+    </div>
   )
 }
 
