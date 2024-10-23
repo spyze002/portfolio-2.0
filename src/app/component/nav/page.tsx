@@ -10,8 +10,8 @@ const NavBar = () => {
     <div> <Image src={LogoTrans} alt="main logo" className={navStle.img} /> </div>
     <ul className={navStle.submain}>
       <li><Link href={'/'}>Home</Link></li>
-      <li><Link href={'/bio'}>  Bio </Link></li>
-      <li><Link href={'/project'}>Project</Link></li>
+      <li><Link href={'/component/bio'}>  Bio </Link></li>
+      <li><Link href={'/component/project'}>Project</Link></li>
     </ul>
    </div>
    </div>
