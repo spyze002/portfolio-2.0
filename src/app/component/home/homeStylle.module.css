@@ -1,45 +1,8 @@
-.text{
-    text-align: center;
-    font-size: 100px;
-    opacity: 0;
-    transition: opacity 2s ease-in;
-    font-weight: bold;
-    cursor: pointer;
-}
-.visible{
-    opacity: 0.7;
-}
-
-.waveText span{
-    display: inline-block;
-    transition: transform 0.3s ease;
-    transform-origin: bottom;
-    transition-delay: calc(var(--i) * 0.5s);
-      
-}
-.waveText:hover span {
-    animation: wave 1s ease-in-out infinite;
-}
-@keyframes wave {
-    0% {
-      transform: translateY(0);
-    }
-    20% {
-      transform: translateY(-10px) rotate(-5deg);
-    }
-    40% {
-      transform: translateY(5px) rotate(3deg);
-    }
-    60% {
-      transform: translateY(-8px) rotate(-3deg);
-    }
-    80% {
-      transform: translateY(3px) rotate(1deg);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+  /* .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
   .zero{
     width: 20px;
     height: 20px;
@@ -61,5 +24,10 @@
   .lineZero{
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .detailsRight{
+    float: right;
+    justify-content: center;
     align-items: center;
   }
