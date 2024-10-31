@@ -1,4 +1,6 @@
 import { render } from '@testing-library/react';
+import assert from 'node:assert';
+import test from 'node:test';
 import NavBar from '../page';
 
 test('Should render the navigation bar with the correct logo and links', () => {
@@ -6,19 +8,19 @@ test('Should render the navigation bar with the correct logo and links', () => {
 
   // Check if the logo image is rendered
   const logoImage = getByAltText('main logo');
-  expect(logoImage).toBeInTheDocument();
+  assert.ok(logoImage);
 
   // Check if the navigation links are present
   const homeLink = getByText('Home');
   const bioLink = getByText('Bio');
   const projectLink = getByText('Project');
 
-  expect(homeLink).toBeInTheDocument();
-  expect(bioLink).toBeInTheDocument();
-  expect(projectLink).toBeInTheDocument();
+  assert.ok(homeLink);
+  assert.ok(bioLink);
+  assert.ok(projectLink);
 
   // Check the href attributes of the navigation links
-  expect(homeLink).toHaveAttribute('href', '/');
-  expect(bioLink).toHaveAttribute('href', '/component/bio');
-  expect(projectLink).toHaveAttribute('href', '/component/project');
+  assert.strictEqual(homeLink.getAttribute('href'), '/');
+  assert.strictEqual(bioLink.getAttribute('href'), '/component/bio');
+  assert.strictEqual(projectLink.getAttribute('href'), '/component/project');
 });
